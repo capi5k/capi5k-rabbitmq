@@ -3,7 +3,7 @@ def role_rabbitmq
 end
 
 def file_rabbitmq_manifest 
-  "exports/capi5k-rabbitmq/templates/rabbitmq.erb"
+  "#{rabbitmq_path}/templates/rabbitmq.erb"
 end
 
 
