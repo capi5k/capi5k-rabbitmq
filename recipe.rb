@@ -6,11 +6,12 @@ load "#{rabbitmq_path}/output.rb"
 
 set :puppet_p, "http_proxy=http://proxy:3128 https_proxy=http://proxy:3128 puppet"
 
+before :rabbitmq, :puppet
+
 namespace :rabbitmq do
 
   desc 'Deploy RabbitMQ on nodes'
   task :default do
-    puppet
     generate
     modules::install
     transfer
@@ -25,12 +26,6 @@ namespace :rabbitmq do
     generate = renderer.result(binding)
     myFile.write(generate)
     myFile.close
-  end
-
-  task :puppet, :roles => [:rabbitmq] do
-    set :user, "root"
-    run "apt-get update 2>/dev/null"
-    run "apt-get install -y puppet 2>/dev/null"
   end
 
   namespace :modules do
