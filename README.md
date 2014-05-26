@@ -1,4 +1,4 @@
-capi5k-init 
-===========
+capi5k-rabbitmq 
+================
 
-* used by xpm init
+Install rabbitmq on nodes.
