@@ -1,0 +1,18 @@
+{
+  "name": "capi5k-rabbitmq",
+  "version": "0.0.0",
+  "homepage": "https://github.com/capi5k/capi5k-rabbitmq",
+  "authors": [
+    "msimonin <matthieu.simonin@inria.fr>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "exports": ["roles.rb", "templates/rabbitmq.erb"]
+}
