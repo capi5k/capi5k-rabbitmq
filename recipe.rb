@@ -32,6 +32,7 @@ namespace :rabbitmq do
   namespace :modules do
     task :install, :roles => [:rabbitmq] do
       set :user, "root"
+      run "apt-get update"
       run "#{puppet_p} module install puppetlabs/rabbitmq --version 2.1.0"
    end
 
