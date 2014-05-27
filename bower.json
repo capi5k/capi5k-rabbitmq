@@ -16,7 +16,7 @@
   ],
   "dependencies" : 
   {
-    "capi5k-puppet": "https://github.com/capi5k/capi5k-puppet/tarball/master"
+    "capi5k-puppet": "https://github.com/capi5k/capi5k-puppet/tarball/1.0.0"
   },
   "exports": ["roles.rb", "templates/rabbitmq.erb"]
 }
