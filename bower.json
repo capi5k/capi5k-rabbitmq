@@ -1,6 +1,6 @@
 {
   "name": "capi5k-rabbitmq",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/capi5k/capi5k-rabbitmq",
   "authors": [
     "msimonin <matthieu.simonin@inria.fr>"
